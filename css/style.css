@@ -1,0 +1,235 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Backgrounds*/
+.fa {
+    color: #f53756!important;
+}
+.bg-danger {
+    background-color: #f53756!important;
+}
+ .bg-success {
+     background-color: #4cb8b3!important;
+ }
+
+ .bg-warning {
+     background-color: #fef46d!important;
+ }
+
+ .bg-secondary{
+     background-color: #752f97!important;
+ }
+
+ /*Navegacion */
+.fixed-top {
+    transition: all .4s ease;
+}
+
+.fixed-top.bg-success {
+    -webkit-box-shadow: 1px 3px 30px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 30px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 30px -1px rgba(0,0,0,0.75);
+}   
+
+.fixed-top .nav-link {
+    color: white!important;
+}
+
+.fixed-top .active {
+    background-color: #752f97!important;
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.navbar-brand span{
+    font-weight: 700;
+}
+
+a.navbar-brand.text-light:hover{
+    color: white!important;
+}
+/*TEXTO sobre el VIDEO */
+.embed-responsive {
+    position: relative;
+    background-image: url(../img/COVER.jpg);
+    height: 40rem;
+    background-position: center center; 
+}
+
+@media (min-width:992px) {
+    .embed-responsive {
+    background-image: unset;
+    height: auto; } 
+}
+
+.embed-responsive::after { 
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,07001c+44,6d0019+100&0.5+0,0.5+100 */
+    background: -moz-linear-gradient(45deg,  rgba(169,3,41,0.5) 0%, rgba(7,0,28,0.5) 44%, rgba(109,0,25,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(169,3,41,0.5) 0%,rgba(7,0,28,0.5) 44%,rgba(109,0,25,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(169,3,41,0.5) 0%,rgba(7,0,28,0.5) 44%,rgba(109,0,25,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a90329', endColorstr='#806d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.informacion-evento {
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+}
+
+@media (min-width:992px) {
+    .informacion-evento{
+        top: 35%;
+    }
+}
+
+.informacion-evento h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+@media (min-width:992px) {
+    .informacion-evento h1 {
+        font-size: 4rem;
+        line-height: unset;
+    }
+}    
+
+.informacion-evento h1 span,
+.informacion-evento  p {
+    font-weight: 400;
+ }
+
+ .informacion-evento  p {
+     font-size: 2rem;
+ }
+
+ .informacion-evento .text-dark,
+ .sobre-festival .text-dark,
+ .pie-de-pagina .text-dark {
+     color: #f53756!important;
+     font-weight: 700;
+ }
+
+ .sobre-festival p {
+    font-size: 1.2rem;
+ }
+ 
+ /*Actividades*/
+.separador::after {
+    content: '';
+    display: block;
+    height: 120px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+}
+.bachata::after{
+    background-image: url(../img/bachata.png);
+    background-size: 70px;
+}
+
+.salsa::after{
+    background-image: url(../img/salsa.png);
+    background-size: 60px;
+}
+
+.horario.bg-warning li:nth-child(2n+2){
+   background-color: #eae05b!important; 
+}
+
+.horario.bg-success li:nth-child(2n+2){
+    background-color: #3ca8a2!important; 
+ }
+
+ /*Fecha*/
+ .fecha {
+     font-size: 2.8rem;
+ }
+
+ .fecha span {
+     font-weight: 700;
+ }
+
+.fecha span::before{
+    content:'-';
+}
+
+.fecha span:first-child::before {
+    display:none;
+}
+
+/*Boletos*/
+
+.boletos .precio {
+    font-size: 2rem;
+}
+
+.boletos .active {
+    background-color: #752f97!important;
+    border-color: #752f97!important;
+}
+.list-group-item-success {
+    background-color: #4cb8b3!important;
+}
+
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #f53756!important;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
